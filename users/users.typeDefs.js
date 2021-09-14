@@ -15,6 +15,10 @@ export default gql`
     token: String
     error: String
   }
+  type EditProfileResult {
+    ok: Boolean!
+    error: String
+  }
 
   type Query {
     seeProfile(username: String!): User
