@@ -8,7 +8,7 @@ export default {
         where: {
           id,
           users: {
-            some: { id: loggedInUser },
+            some: { id: loggedInUser.id },
           },
         },
       })
